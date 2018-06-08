@@ -1,0 +1,15 @@
+.block-centerH {
+	text-align: center;
+	width: 100%;
+	clear: right;
+}
+
+.block-centerV {
+	position: absolute;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.first-capital {
+	text-transform: capitalize;
+}

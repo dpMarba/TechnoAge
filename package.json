@@ -1,0 +1,18 @@
+{
+  "name": "TechnoAge",
+  "version": "0.1.0",
+  "description": "Proyecto DAM 2017-2018. Grupo 7N, IES Abastos",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "David Parrilla Moreira",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^2.0.2"
+  },
+  "dependencies": {
+    "firebase": "^5.0.4",
+    "grpc": "^1.12.2"
+  }
+}

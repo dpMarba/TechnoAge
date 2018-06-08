@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- Pagina que se mostrara cuando el usuario haga click en "nuevo usuario", mostrando el formulario a rellenar para crear un nuevo usuario en el sistema -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>TechnoAge - Registro de nuevo usuario</title>
+	<link rel="stylesheet" text="text/css" href="../../assets/css/photon.css">
+	<link rel="stylesheet" text="text/css" href="../../assets/css/utils.css">
+	<script language="JavaScript" type="text/javascript" src="../js/registration.js"></script>
+	<script language="JavaScript" type="text/javascript" src="../js/auth.js"></script>
+</head>
+<body>
+	<div class="window">
+		<div class="window-content">
+			<!-- Formulario que recogera los datos (usuario y contraseña) -->
+			<form class="block-centerH block-centerV">
+				<!-- Agrupaciones en el formulario de etiquetas con su campo de texto correspondiente -->
+				<div class="form-group">
+					<label>Nombre</label>
+					<!-- El atributo "onkeyup" permite ejecutar una funcion cuando el usuario deje de pulsar una tecla (por lo tanto, despues de introducir datos) -->
+					<input id="nameInput" type="text" class="form-control" onkeyup="validateName()">
+				</div>
+				<div class="form-group">
+					<label>Apellidos</label>
+					<input id="surnameInput" type="text" class="form-control" onkeyup="validateSurname()">
+				</div>
+				<div class="form-group">
+					<label>Correo electrónico</label>
+					<input id="emailInput" type="email" class="form-control" onkeyup="validateMail()" placeholder="Ejemplo: abc@xyz.com">
+				</div>
+				<div class="form-group">
+					<label>Contraseña</label>
+					<input id="passwordInput" type="password" class="form-control" onkeyup="validatePassword() "placeholder="Minimo 8 caracteres">
+				</div>
+				<div class="form-group">
+					<label>Dirección</label>
+					<input id="addressInput" type="text" class="form-control" onkeyup="validateAddress()">
+				</div>
+				<div class="form-group">
+					<label>Ciudad</label>
+					<!-- Lista desplegable de opciones (ciudades españolas, en este caso) -->
+					<!-- El atributo "onchange" permite ejecutar una funcion cuando el usuario cambie la opcion seleccionada -->
+					<select id="cityInput" class="form-control" onchange="validateCity()">
+						<option>Seleccionar...</option>
+						<option>Madrid</option>
+						<option>Barcelona</option>
+						<option>Valencia</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label>Telefono movil</label>
+					<input id="mobilePhoneInput" type="tel" class="form-control" onkeyup="validateMobilePhone()" placeholder="123456789">
+				</div>
+				<!-- Div para agrupar y centrar los botones del formulario con CSS -->
+				<div class="form-actions block-centerH">
+				    <button type="button" class="btn btn-form btn-primary" onclick="validateForm()">Registrar</button>
+				    <button type="button" class="btn btn-form btn-negative">Cancelar</button>
+		    	</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- Pagina inicial que se mostrara al iniciar la aplicacion -->
+<!-- La pagina de bienvenida, permitira acceder a los menus de productos, iniciar sesion o registrar un nuevo usuario -->
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>TechnoAge - Welcome!</title>
+    <!-- Enlazamos el CSS de Photon a la pagina para poder utilizar sus clases predefinidas -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/photon.css">
+    <!-- CSS propio con clases utiles, como centrar elementos de bloque -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/utils.css">
+    <!-- Fichero JavaScript asociado a esta pagina -->
+    <script language="JavaScript" type="text/javascript" src="../js/index.js"></script>
+  </head>
+
+  <body>
+    <!-- Wrapper que engloba toda la ventana al completo -->
+    <div class="window">
+      <!-- Header con la clase Photon de barra de herramientas -->
+      <header class="toolbar toolbar-header">
+        <h1 class="title">Menu principal</h1>
+        <!-- Wrapper que engloba a los botones de la barra de herramientas -->
+        <div class="toolbar-actions">
+          <!-- Clase que engloba al grupo de botones, solo puede estar activo al mismo tiempo uno de los botones del grupo. -->
+          <div class="btn-group">
+            <!-- Elemento boton con la clase default de botones Photon -->
+            <button class="btn btn-default">
+              <!-- Dentro de cada boton, podemos incluir iconos mediante clases Photon asociadas al elemento span -->
+              <span class="icon icon-mouse"></span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <!-- Wrapper que engloba el CONTENIDO del panel principal de la ventana -->
+      <div class="window-content">
+        <!-- CSS para añadir padding y centrar el contenido -->
+        <div class="padded-more block-centerH block-centerV">
+          <h1>Bienvenido a TechnoAge</h1>
+          <p>Texto de bienvenida.</p>
+          <!-- Botones del panel principal -->
+          <button class="btn btn-large btn-primary" onclick="openLoginForm()">Iniciar Sesion</button>
+          <button class="btn btn-large btn-positive" onclick="openRegistrationForm()">Nuevo Usuario</button>
+        </div>
+      </div>
+    </div>    
+  </body>
+</html>

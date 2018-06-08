@@ -1,0 +1,7 @@
+#Ignorar directorio dev
+
+/dev
+
+#Ignorar informacion sensible
+
+/node_modules

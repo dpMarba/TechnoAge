@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!-- Pagina que se mostrara cuando el usuario haga click en "iniciar sesion", con el fin de que introduzca sus credenciales -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>TechnoAge - Inicio de sesión</title>
+	<!-- Enlazamos el CSS de Photon a la pagina para poder utilizar sus clases predefinidas -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/photon.css">
+    <!-- CSS propio con clases utiles, como centrar elementos de bloque -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/utils.css">
+    <!-- Fichero JavaScript asociado a esta pagina -->
+	<script language="JavaScript" type="text/javascript" src="../js/login.js"></script>
+</head>
+<body>
+	<div class="window">
+		<div class="window-content">
+			<!-- Formulario que recogera los datos (usuario y contraseña) -->
+			<form>
+				<!-- Clase Photon para agrupar elementos de formulario -->
+				<div class="form-group">
+					<label class="block-centerH">Por favor, introduzca sus credenciales.</label>
+					<input type="email" class="form-control" placeholder="Correo electronico">
+					<input type="password" class="form-control" placeholder="Contraseña">
+				</div>
+				<!-- Div para agrupar y centrar los botones del formulario con CSS -->
+				<div class="form-actions block-centerH">
+				    <button type="submit" class="btn btn-form btn-primary">Iniciar sesión</button>
+				    <button type="button" class="btn btn-form btn-negative">Cancelar</button>
+		    	</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
